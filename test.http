@@ -1,0 +1,28 @@
+GET http://localhost:3000/quotes/
+
+###
+
+GET http://localhost:3000/quotes/687b5e3f6b052760b58a5d79
+
+###
+POST http://localhost:3000/quotes/
+Content-Type: application/json
+
+{
+  "text": "The only limit to our realization of tomorrow is our doubts of today.",
+  "author": "Franklin D. Roosevelt"
+}
+
+###
+
+PUT http://localhost:3000/quotes/687b5e3f6b052760b58a5d79
+Content-Type: application/json
+
+{
+  "text": "The only limit to our realization of tomorrow is our doubts of today.",
+  "author": "Franklin D. Roosevelt"
+}
+
+###
+DELETE http://localhost:3000/quotes/687b5e3f6b052760b58a5d79
+Content-Type: application/json
